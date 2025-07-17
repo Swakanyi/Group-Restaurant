@@ -95,19 +95,12 @@
     .view-menu-btn:hover {
       color: blue;
     }
-
-    .dining-options {
-      display: flex;
-      gap: 30px;
-      margin-bottom: 50px;
-      text-align: center;
-    }
-
+   
     .dining-card {
       background-color: black;
       border: 1px solid white;
       border-radius: 15px;
-      padding: 40px 30px;
+      padding: 15px 20px;
       text-align: center;
       transition: all 0.3s ease;
     }
@@ -132,7 +125,8 @@
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
+      margin-top: 20px;
     }
 
     .filter-btn {
@@ -140,7 +134,8 @@
       color: white;
       border-radius: 20px;
       padding: 10px 20px;
-      font-size: 1rem;
+      font-size: 1.2rem; 
+      margin-bottom: 5px;
 
     }
 
@@ -167,13 +162,13 @@
     .book-btn {
       background-color: rgb(210, 207, 204);
       color: black;
-      padding: 15px 30px;
-      border-radius: 25px;
+      padding: 5px 20px;
+      border-radius: 15px;
       font-size: 1.2rem;
       font-weight: 500;
       transition: all 0.3s ease;
-      width: 400px;
-      margin-left: 50px;
+      width: 60%;
+      margin-left: 100px;
     }
 
     .book-btn:hover {
@@ -214,7 +209,7 @@
     <div class="header">
       <h1 class="title0">A Symphony of Flavors Await</h1>
     </div>
-    <div class="dining-options">
+    <div class="grid grid-cols-3 gap-4"> 
       <div class="dining-card">
         <h3>Elite Dining Experience</h3>
         <p>For Connoisseurs</p>
@@ -229,7 +224,7 @@
       </div>
 
     </div>
-    <div class="filter-tabs text-lg">
+    <div class="filter-tabs">
       <button class="filter-btn-active">All</button>
       <button class="filter-btn">Desserts</button>
       <button class="filter-btn">Appertizers</button>
@@ -258,7 +253,7 @@
                 class="fa fa-star" aria-hidden="true"></i>
 
             </div>
-            <p class="mt-1 text-white text-lg">$50.42</p>
+            <p class="mt-1 text-[#56da36] text-2xl">$50.42</p>
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -274,7 +269,7 @@
                 class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
                 class="fa fa-star" aria-hidden="true"></i>
             </div>
-            <p class="mt-1 text-white text-lg"><strong>$30.12</strong></p>
+            <p class="mt-1 text-[#56da36] text-2xl"><strong>$30.12</strong></p>
           </div>
         </div>
 
@@ -292,7 +287,7 @@
                 class="fa fa-star" aria-hidden="true"></i>
 
             </div>
-            <p class="mt-1 text-white text-lg"><strong>$50.42</strong></p>
+            <p class="mt-1 text-[#56da36] text-2xl"><strong>$60.42</strong></p>
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -309,7 +304,7 @@
                 class="fa fa-star" aria-hidden="true"></i>
 
             </div>
-            <p class="mt-1 text-white text-lg">$50.42</p>
+            <p class="mt-1 text-[#56da36] text-2xl">$50.42</p>
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -327,7 +322,7 @@
                 class="fa fa-star" aria-hidden="true"></i>
 
             </div>
-            <p class="mt-1 text-white text-lg">$50.42</p>
+            <p class="mt-1 text-[#56da36] text-2xl">$40.42</p>
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -343,7 +338,7 @@
                 class="fa fa-star" aria-hidden="true"></i>
 
             </div>
-            <p class="mt-1 text-white text-lg">$50.42</p>
+            <p class="mt-1 text-[#56da36] text-2xl">$50.42</p>
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -359,7 +354,7 @@
                 class="fa fa-star" aria-hidden="true"></i>
 
             </div>
-            <p class="mt-1 text-white text-lg">$30.42</p>
+            <p class="mt-1 text-[#56da36] text-2xl">$30.42</p>
           </div>
         </div>
 
@@ -377,79 +372,67 @@
                 class="fa fa-star" aria-hidden="true"></i>
 
             </div>
-            <p class="mt-1 text-white text-lg">$35.42</p>
+            <p class="mt-1 text-[#56da36] text-2xl">$35.42</p>
           </div>
         </div>
 
 
       </div>
     </div>
+</section>
 
-    <section>
-      <div class="text-center text-2xl">
-        <button class="view-menu-btn">View All Menu</button>
+  <section class="text-white m-6">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+      
+      <!-- Column 1 -->
+      <div class="ml-">
+        <h3 class="text-3xl md:text-5xl font-bold mb-4">A Celebration of Exquisite Flavors</h3>
+        <p class="text-xl mb-2">Tasting Menu</p>
+        <p class="text-lg">Immerse yourself in a culinary journey where every dish is a tribute to the artistry of fine dining.</p>
       </div>
-    </section>
-  </section>
-  <br>
 
-  <section class="text-white mb-6">
-    <div class="container">
-      <div class="1row">
-        <div class="grid grid-cols-3 gap-4">
+      <!-- Column 2 -->
+      <div class="flex flex-col items-center">
+        <img src="drink.jpg" alt="Celebrate with us" class="rounded-lg w-full object-cover h-64 mb-4">
+        <button class="book-btn bg-green-600 hover:bg-green-700 text-white px-2 py-1 w-15 items-center rounded-lg transition">Book a table</button>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h4 class="text-2xl font-semibold mb-4">A Tempting Prelude to Your Culinary Journey</h4>
+
+        <!-- Item 1 -->
+        <div class="grid grid-cols-2 gap-4 items-center mb-4">
           <div>
-            <h3 class="text-white text-6xl">A Celebration of Exquisite Flavors</h3>
-            <br><br>
-            <p class="text-xl">Tasting Menu</p>
-            <br>
-            <p class="text-lg">Immerse yourself in a culinary journey where every dish is a tribute to the artistry of
-              fine dining</p>
+            <p class="font-semibold">Brunch Favorites</p>
+            <p class="text-sm">Weekend Indulgence: A Collection of Brunch</p>
           </div>
-          <div>
-            <img src="drink.jpg" alt="Celebrate with us">
-
-            <div>
-              <br>
-              <button class="book-btn">Book a table</button>
-            </div>
-          </div>
-          <div>
-            <h4 class="text-2xl">A Tempting Prelude to Your Culinary journey</h4>
-            <br>
-            <div>
-              <div class="grid grid-cols-2 gap-3 text-lg">
-                <h4> <span>Brunch favorites</span> <br>Weekend Indulgence: A Collection of Brunch <br>
-                  <button class="see-btn"> See More</button>
-                </h4>
-                <img src="brunch.jpg" alt="" width="100" height="80">
-              </div>
-              <br>
-              <div class="grid grid-cols-2 gap-3">
-                <h4> <span>Grilled Classics</span> <br>A slice of cake, a sprinkle of sweetness: Pure bliss in every
-                  bite <br>
-                  <button class="see-btn"> See More</button>
-                </h4>
-                <img src="cake.jpg" alt="" width="100" height="80">
-
-              </div>
-              <br>
-              <div class="grid grid-cols-2 gap-3">
-                <h4> <span>Vegetarian BBQ</span> <br>Plant-Based Delights with Smoky BBQ Flavor <br>
-                  <button class="see-btn"> See More</button>
-                </h4>
-                <img src="veg bbq.jpg" alt="" width="100" height="80">
-              </div>
-
-
-
-
-
-            </div>
-
-          </div>
-
+          <img src="brunch.jpg" alt="Brunch" class=" h-20 object-cover rounded">
         </div>
-  </section>
+
+        <!-- Item 2 -->
+        <div class="grid grid-cols-2 gap-4 items-center mb-4">
+          <div>
+            <p class="font-semibold">A Slice of Happiness</p>
+            <p class="text-sm">A slice of cake, a sprinkle of sweetness: Pure bliss in every bite.</p>
+          </div>
+          <img src="cake.jpg" alt="Cake" class=" h-20 object-cover rounded">
+        </div>
+
+        <!-- Item 3 -->
+        <div class="grid grid-cols-2 gap-4 items-center">
+          <div>
+            <p class="font-semibold">Vegetarian BBQ</p>
+            <p class="text-sm">Plant-Based Delights with Smoky BBQ Flavor.</p>
+          </div>
+          <img src="veg bbq.jpg" alt="Veg BBQ" class=" h-20 object-cover rounded">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 
