@@ -129,7 +129,7 @@
       margin-top: 20px;
     }
 
-    .filter-btn {
+    /* .filter-btn {
       background-color: rgb(44, 43, 43);
       color: white;
       border-radius: 20px;
@@ -137,7 +137,7 @@
       font-size: 1.2rem; 
       margin-bottom: 5px;
 
-    }
+    } */
 
     .filter-btn:hover {
       color: goldenrod;
@@ -182,6 +182,56 @@
     .see-btn:hover {
       color: rgb(245, 6, 42);
     }
+    /* STYLING TAB CLICKS */
+    .tabs {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin: auto;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 0px;
+      margin-top: 20px;
+      border-radius: 50px;
+      background-color: black;
+      font-size: 1.2rem;
+    
+    }
+    .tab-labels {
+      display: flex;
+      gap: 1rem;
+      border-radius: 20px;
+      justify-items: center;
+    }
+    .tab-labels label {
+      padding: 0.5rem 1rem;
+      background: #0e0e0e;
+      cursor: pointer;
+      border-radius: 5px 5px 0 0;
+      text-align: center;
+    
+    }
+    .tab-content {
+      border: 1px solid #CBD5E1;
+      padding: 1rem;
+      display: none;
+      border-radius: 0 0 5px 5px;
+      color: white;
+    }
+    input[name="tab"] {
+      display: none;
+    }
+    #tab1:checked ~ .content #content1,
+    #tab2:checked ~ .content #content2,
+    #tab3:checked ~ .content #content3 {
+      display: block;
+    }
+    #tab1:checked ~ .labels label[for="tab1"],
+    #tab2:checked ~ .labels label[for="tab2"],
+    #tab3:checked ~ .labels label[for="tab3"] {
+      background: goldenrod;
+      color: white;
+    }
   </style>
 </head>
 
@@ -223,7 +273,7 @@
         <p>Artisan Creations</p>
       </div>
 
-    </div>
+    <!-- </div>
     <div class="filter-tabs">
       <button class="filter-btn-active">All</button>
       <button class="filter-btn">Desserts</button>
@@ -231,9 +281,47 @@
       <button class="filter-btn">Wine</button>
 
 
-    </div>
+    </div> -->
 
   </div>
+<!-- TAB CLICKS -->
+ <div class="tabs">
+    <input type="radio" id="tab1" name="tab" checked>
+    <input type="radio" id="tab2" name="tab">
+    <input type="radio" id="tab3" name="tab">
+    <div class="labels tab-labels">
+      <label for="tab1">Desserts</label>
+      <label for="tab2">Appetizers</label>
+      <label for="tab3">Wine</label>
+    </div>
+    <div class="content">
+      <div id="content1" class="tab-content">
+        <p>Pineapple Cake</p>
+        <p>Gelato</p>
+        <p>Banana Oreo Cake</p>
+        <p>Baked Alaska</p>
+        <p>Sorbet</p>
+         
+      </div>
+      <div id="content2" class="tab-content">
+        <p>Avocado Toast</p>
+        <p>Spaghetti Pasta</p>
+        <p>Chicken Pie</p>
+        <p>Fish Sandwich</p>
+        <p>Vegetable Salad</p>
+      </div>
+      <div id="content3" class="tab-content">
+        <p>Merlot</p>
+        <p>Pinot noir</p>
+        <p>Sauvignon blanc</p>
+        <p>Chardonnay</p>
+        <p>Caberbet Sauvignon</p>
+        
+      </div>
+    </div>
+  </div>
+
+
 
 
   <section class="text-gray-600 body-font pt-0.5">
